@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="icon/favicon.ico"/>
+    <title>Questionnaire</title>
+    <style type="text/css">
+        #centerLayer {
+            margin-left: 35%;
+            margin-right: 30%;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body bgcolor="#31ff79">
+    <div id="centerLayer">
+        <h1>Fill out fields and answer questions</h1>
+        <form action="/fill" method="post">
+            <p><b>Name:</b><br>
+                <input type="text" size="30" name="name" value="qw" required>
+            </p>
+            <p><b>Surname:</b><br>
+                <input type="text" size="30" name="surname" value="er" required>
+            </p>
+            <p><b>Age:</b><br>
+                <input type="number" size="30" name="age" value="22" required>
+            </p>
+            <p><b>What part of the plant vanilla get vanilla pastry?</b><br>
+                <input type="radio" name="vanilla" value="fruit" checked> Fruit<br>
+                <input type="radio" name="vanilla" value="stems"> Stems<br>
+                <input type="radio" name="vanilla" value="root"> Root<br>
+                <input type="radio" name="vanilla" value="leaves"> Leaves<br>
+            </p>
+            <p><b>In Ancient Iran it was called the Governor, managing a province?</b><br>
+                <input type="radio" name="governor" value="satrap" checked> Satrap<br>
+                <input type="radio" name="governor" value="despot"> Despot<br>
+                <input type="radio" name="governor" value="tyrant"> Tyrant<br>
+                <input type="radio" name="governor" value="tycoon"> Tycoon<br>
+            </p>
+            <p><b>The limit of a Galaxy is limited to the exploration of space by man?</b><br>
+                <input type="radio" name="galaxy" value="magellanic Clouds" checked> The Magellanic Clouds<br>
+                <input type="radio" name="galaxy" value="andromeda Nebula"> Andromeda Nebula<br>
+                <input type="radio" name="galaxy" value="centaurus A"> Centaurus A<br>
+                <input type="radio" name="galaxy" value="milky Way"> Milky Way<br>
+            </p>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
